@@ -1,0 +1,41 @@
+ion-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    position: static;
+    width: 414px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75));
+    background-image: url("../../../../assets/Logo- WTE svg.png");
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    ion-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        position: static;
+        width: 45px;
+        height: 45px;
+        left: 20px;
+        top: 20px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+        ion-button {
+            width: 45px;
+            height: 45px;
+            ion-avatar {
+                img {
+                }
+            }
+        }
+    }
+}

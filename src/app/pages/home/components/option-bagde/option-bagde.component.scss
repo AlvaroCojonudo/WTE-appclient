@@ -1,0 +1,40 @@
+ion-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --background: rgba(255, 255, 255, 0.25);
+    --border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    letter-spacing: -0.07em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 100%;
+    --color: white;
+    --ripple-color: #0f4c5c;
+    ion-icon {
+        height: 24px;
+        width: 24px;
+        margin: 0;
+        padding: 0;
+        color: white;
+        &:first-child {
+            margin-right: 5px;
+        }
+        &:last-child {
+            margin-left: 10px;
+        }
+    }
+}

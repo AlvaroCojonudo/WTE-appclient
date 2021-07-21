@@ -1,0 +1,7 @@
+{
+  "name": "wte-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

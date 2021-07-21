@@ -1,0 +1,10 @@
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="options-wrapper">
+
+      <app-option-bagde *ngFor="let tool of tools" [tool]="tool"></app-option-bagde>
+    </div>
+
+    <ion-searchbar placeholder="Buscar"></ion-searchbar>
+  </ion-toolbar>
+</ion-footer>

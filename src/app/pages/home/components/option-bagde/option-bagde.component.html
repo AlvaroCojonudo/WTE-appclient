@@ -1,0 +1,5 @@
+<ion-button>
+  <ion-icon *ngIf="tool.startIcon" slot="start" [name]="tool.startIcon"></ion-icon>
+  <ion-text color="dark">{{ tool.title }}</ion-text>
+  <ion-icon *ngIf="tool.endIcon" slot="end" [name]="tool.endIcon"></ion-icon>
+</ion-button>
