@@ -10,6 +10,10 @@ import { HomePage } from './home.page';
 import { MainHeaderComponent } from '../../shareds/components/main-header/main-header.component';
 import { MainFooterComponent } from '../../shareds/components/main-footer/main-footer.component';
 import { SharedComponentsModule } from '../../shareds/modules/shared-components/shared-components.module';
+import { MapComponent } from './components/map/map.component';
+
+import { environment } from 'src/environments/environment';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   imports: [
@@ -17,12 +21,14 @@ import { SharedComponentsModule } from '../../shareds/modules/shared-components/
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,,
+    GoogleMapsModule
   ],
   declarations: [
     HomePage,
     MainHeaderComponent,
-    MainFooterComponent
+    MainFooterComponent,
+    MapComponent
   ]
 })
 export class HomePageModule { }

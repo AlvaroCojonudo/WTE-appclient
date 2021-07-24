@@ -1,5 +1,7 @@
 <ion-content>
   <app-main-header></app-main-header>
-  <div class="map"></div>
+  <!--<app-map></app-map>-->
+  <mgl-map [style]="'mapbox://styles/mapbox/streets-v11'" [zoom]="[16]" [center]="[-88.174287, 13.481653]">
+  </mgl-map>
   <app-main-footer></app-main-footer>
 </ion-content>
