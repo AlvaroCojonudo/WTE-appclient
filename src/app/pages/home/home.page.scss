@@ -1,31 +1,23 @@
-ion-content {
+div.main-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    app-main-header {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    .main-component {
         flex: none;
-        order: 0;
-        align-self: stretch;
         flex-grow: 0;
         margin: 0px;
-    }
-    mgl-map {
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 1;
-        margin: 0px;
-    }
-    app-main-footer {
-        flex: none;
-        order: 2;
-        align-self: stretch;
-        flex-grow: 0;
-        margin: 0px;
+        &.header {
+            order: 0;
+        }
+        &.map {
+            order: 1;
+            flex-grow: 1;
+        }
+        &.footer {
+           order: 2;
+        }
     }
 }

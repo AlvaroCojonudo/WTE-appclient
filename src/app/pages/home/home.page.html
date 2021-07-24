@@ -1,7 +1,9 @@
-<ion-content>
-  <app-main-header></app-main-header>
-  <!--<app-map></app-map>-->
-  <mgl-map [style]="'mapbox://styles/mapbox/streets-v11'" [zoom]="[16]" [center]="[-88.174287, 13.481653]">
-  </mgl-map>
-  <app-main-footer></app-main-footer>
-</ion-content>
+<div class="main-wrapper">
+  <app-main-header class="main-component header"></app-main-header>
+  <google-map height="100%" width="100%" class="main-component map" [options]="mapOptions">
+    <map-marker #marker="mapMarker" [options]="markerOptions" (mapClick)="openInfoWindow(marker)">
+    </map-marker>
+    <map-info-window>Estas aquí</map-info-window>
+  </google-map>
+  <app-main-footer class="main-component footer"></app-main-footer>
+</div>
