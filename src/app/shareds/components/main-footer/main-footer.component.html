@@ -1,10 +1,23 @@
-<ion-footer class="ion-no-border">
+<!--<ion-footer class="ion-no-border">
   <ion-toolbar>
     <div class="options-wrapper">
-
       <app-option-bagde *ngFor="let tool of tools" [tool]="tool"></app-option-bagde>
     </div>
-
     <ion-searchbar placeholder="Buscar"></ion-searchbar>
   </ion-toolbar>
-</ion-footer>
+</ion-footer>-->
+<div class="searchWrapper">
+  <ion-button>
+    <ion-icon slot="start" name="radio"></ion-icon>
+    <div class="layer-wrapper">
+      <p class="cuantity">500</p>
+      <p class="unit">mts</p>
+    </div>
+  </ion-button>
+  <ion-input placeholder="Buscar" pattern="search" clearInput="true" multiple="false" inputmode="search"></ion-input>
+
+  <!--<ion-searchbar inputmode="search" enterkeyhint="enter" showCancelButton="never" placeholder="Buscar"></ion-searchbar>-->
+  <ion-button>
+    <ion-icon slot="icon-only" name="filter"></ion-icon>
+  </ion-button>
+</div>

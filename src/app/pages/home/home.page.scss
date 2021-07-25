@@ -16,8 +16,12 @@ div.main-wrapper {
             order: 1;
             flex-grow: 1;
         }
-        &.footer {
-           order: 2;
-        }
+    }
+    app-main-footer.footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px 20px;
     }
 }

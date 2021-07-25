@@ -1,49 +1,126 @@
-ion-footer {
-    ion-toolbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        position: static;
-        width: 100vw;
-        height: fit-content;
-        --background: #0f4c5c;
-        flex: none;
-        order: 2;
-        align-self: stretch;
-        flex-grow: 0;
-        margin: 0px 0px;
-        div.options-wrapper {
+//ion-footer {
+//    ion-toolbar {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: center;
+//        padding: 20px;
+//        position: static;
+//        width: 100vw;
+//        height: fit-content;
+//        --background: transparent;
+//        flex: none;
+//        order: 2;
+//        align-self: stretch;
+//        flex-grow: 0;
+//        margin: 0px 0px;
+//        z-index: 9999999;
+//        div.options-wrapper {
+//            display: flex;
+//            flex-direction: row;
+//            justify-content: space-between;
+//            align-items: center;
+//            padding: 0px;
+//            width: 100%;
+//            height: fit-content;
+//            flex: none;
+//            order: 0;
+//            align-self: stretch;
+//            flex-grow: 0;
+//        }
+//        ion-searchbar {
+//            display: flex;
+//            flex-direction: row;
+//            align-items: center;
+//            padding: 10px;
+//            --color: #08262e;
+//            --placeholder-color: #08262e;
+//            width: 100%;
+//            height: 44px;
+//            //background: #ffffff;
+//            --background: white;
+//            border-radius: 30px;
+//            flex: none;
+//            order: 1;
+//            align-self: stretch;
+//            flex-grow: 0;
+//            margin: 10px 0px;
+//        }
+//    }
+//}
+
+div.searchWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 60px;
+    ion-button {
+        --background: var(--ion-color-primary);
+        --border-radius: 7px;
+        height: 100%;
+        --padding-top: 10px;
+        --padding-bottom: 10px;
+        --padding-start: 10px;
+        --padding-end: 10px;
+        --ripple-color: var(--ion-color-dark);
+        div.layer-wrapper {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             padding: 0px;
-            width: 100%;
-            height: fit-content;
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
-        }
-        ion-searchbar {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px;
-            --color: #08262e;
-            --placeholder-color: #08262e;
-            width: 100%;
-            height: 44px;
-            //background: #ffffff;
-            --background: transparent;
-            border-radius: 30px;
-            flex: none;
-            order: 1;
-            align-self: stretch;
-            flex-grow: 0;
-            margin: 10px 0px;
+            p {
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 0px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                line-height: 100%;
+                font-size: 15px;
+                font-family: Poppins;
+                font-style: normal;
+                letter-spacing: -0.07em;
+                &.cuantity {
+                    font-weight: bold;
+                }
+                &.unit {
+                    font-weight: normal;
+                    text-transform: lowercase;
+                }
+            }
         }
     }
+    ion-input {
+        --placeholder-color: var(--ion-color-dark);
+        text-align: center;
+        --placeholder-font-style: normal;
+        --color: var(--ion-color-dark);
+        --placeholder-font-weight: bold;
+        --placeholder-opacity: 1;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: regular;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.07em;
+    }
+
+    //ion-searchbar {
+    //    --placeholder-color: var(--ion-color-dark);
+    //    --box-shadow: none;
+    //    --placeholder-font-style: normal;
+    //    --placeholder-font-weight: bold;
+    //    --color: var(--ion-color-medium);
+    //    &::placeholder{
+    //        color: var(--ion-color-dark);
+    //    }
+    //}
 }
