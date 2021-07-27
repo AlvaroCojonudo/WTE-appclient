@@ -1,9 +1,19 @@
 <div class="main-wrapper">
   <app-main-header class="main-component header"></app-main-header>
-  <google-map height="100%" width="100%" class="main-component map" [options]="mapOptions">
+  <!--<google-map height="100%" width="100%" class="main-component map" [options]="mapOptions">
     <map-marker #marker="mapMarker" [options]="markerOptions" (mapClick)="openInfoWindow(marker)">
     </map-marker>
     <map-info-window>Estas aquí</map-info-window>
-  </google-map>
+  </google-map>-->
+  <mgl-map class="main-component map" [style]="'mapbox://styles/mapbox/streets-v11'" [zoom]="[16]"
+    [center]="positionArray" (mapLoad)="map = $event">
+    <!--<mgl-layer id="raster" type="line" [source]="states" [paint]="{'line-color': '#627BC1', 'line-width': 2}">
+    </mgl-layer>-->
+    <mgl-marker *ngFor="let place of places$ | async" [lngLat]="reverse(place.location.coordinates)">
+      <!--<div (click)="alert('Foo')" class="marker">
+        Hello
+      </div>-->
+    </mgl-marker>
+  </mgl-map>
   <app-main-footer class="footer"></app-main-footer>
 </div>

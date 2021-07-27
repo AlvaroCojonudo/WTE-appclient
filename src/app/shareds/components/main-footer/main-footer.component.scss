@@ -58,7 +58,51 @@ div.searchWrapper {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     height: 60px;
+
+    //div.nearButton {
+    //    display: flex;
+    //    flex-flow: row nowrap;
+    //    justify-content: center;
+    //    align-items: center;
+    //    background-color: var(--ion-color-primary);
+    //    border-radius: 7px;
+    //    padding: 10px;
+    //    gap: 5px;
+    //    ion-icon {
+    //        width: 25px;
+    //        height: 25px;
+    //        color: white;
+    //    }
+    //    div.layer-wrapper {
+    //        display: flex;
+    //        flex-flow: column nowrap;
+    //        p {
+    //            margin: 0;
+    //            padding: 0;
+    //            color: white;
+    //            display: flex;
+    //            font-family: Poppins;
+    //            font-style: normal;
+    //            align-items: center;
+    //            text-align: center;
+    //            letter-spacing: -0.07em;
+    //            font-size: 15px;
+    //            line-height: 100%;
+    //            &.cuantity {
+    //                font-weight: bold;
+    //            }
+    //            &.unit {
+    //                font-weight: normal;
+    //            }
+    //        }
+    //    }
+    //}
+
     ion-button {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
         --background: var(--ion-color-primary);
         --border-radius: 7px;
         height: 100%;
@@ -67,12 +111,17 @@ div.searchWrapper {
         --padding-start: 10px;
         --padding-end: 10px;
         --ripple-color: var(--ion-color-dark);
+        ion-icon {
+            height: 25px;
+            width: 25px;
+        }
         div.layer-wrapper {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 0px;
+            margin: 0 0 0 5px;
             p {
                 flex: none;
                 order: 0;
